@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
+    <title>Product Manager</title>
+    
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="../static/css/style.css">  <!-- Corrected path -->
+    
+    <!-- Link to the external JavaScript file for functionality (deferred loading) -->
+    <script defer src="../static/js/script.js"></script>   <!-- Corrected path -->
+</head>
+<body>
+    <!-- Main heading of the page -->
+    <h1>Product Manager</h1>
+
+    <!-- Container for all the content -->
+    <div class="container">
+        
+        <!-- Section to add a new product -->
+        <h3>Add Product</h3>
+        <!-- Form for adding a new product, prevents page reload on submission -->
+        <form onsubmit="addProduct(); return false;">
+            <!-- Input fields for product details -->
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <input type="number" id="price" placeholder="Price" step="0.01" required>
+            <!-- Checkbox for product availability -->
+            <label>
+                <input type="checkbox" id="availability">
+                Available
+            </label>
+            <!-- Submit button for adding the product -->
+            <button type="submit">Add Product</button>
+        </form>
+
+        <!-- Section to search for products -->
+        <h3>Search Products</h3>
+        <!-- Form for searching products, prevents page reload on submission -->
+        <form onsubmit="searchProducts(); return false;">
+            <!-- Input fields for search filters -->
+            <input type="text" id="search-name" placeholder="Name">
+            <input type="text" id="search-category" placeholder="Category">
+            <!-- Checkbox for filtering by availability -->
+            <label>
+                <input type="checkbox" id="search-availability">
+                Available
+            </label>
+            <!-- Submit button for searching products -->
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Section to display the list of products -->
+        <h3>Product List</h3>
+        <!-- Table to display product details -->
+        <table>
+            <thead>
+                <!-- Table headers for product attributes -->
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                    <th>Availability</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <!-- Table body where product rows will be dynamically inserted -->
+            <tbody id="product-table-body"></tbody>
+        </table>
+    </div>
+</body>
+</html>

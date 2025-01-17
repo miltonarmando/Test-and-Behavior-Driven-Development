@@ -1,0 +1,138 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif; /* Sets font to Arial, fallback to sans-serif */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: #f4f4f9; /* Light gray background color */
+    color: #333; /* Dark gray text for readability */
+    line-height: 1.6; /* Increases line height for better readability */
+}
+
+/* Main heading */
+h1 {
+    text-align: center; /* Centers the text */
+    color: #4CAF50; /* Green color for heading */
+    margin: 20px 0; /* Adds top and bottom margin */
+}
+
+/* Container for content */
+.container {
+    max-width: 900px; /* Maximum width of container */
+    margin: 20px auto; /* Centers the container and adds margin on top and bottom */
+    padding: 20px; /* Adds padding inside the container */
+    background: white; /* White background for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
+    border-radius: 8px; /* Rounded corners for the container */
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 20px; /* Adds space below the form */
+}
+
+form input[type="text"],
+form input[type="number"],
+form button {
+    padding: 10px; /* Adds padding inside form elements */
+    margin: 5px 0; /* Adds space between form elements */
+    width: 100%; /* Makes form elements full width */
+    border: 1px solid #ddd; /* Light border around form elements */
+    border-radius: 5px; /* Rounded corners for form elements */
+}
+
+/* Label and checkbox styling */
+form label {
+    display: flex; /* Flexbox to align label and checkbox */
+    align-items: center; /* Vertically aligns label and checkbox */
+    margin: 10px 0; /* Adds margin above and below label */
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px; /* Adds space between checkbox and label */
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50; /* Green background color for buttons */
+    color: white; /* White text color for buttons */
+    border: none; /* Removes border */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #45a049; /* Darkens the green background on hover */
+}
+
+/* Table Styling */
+table {
+    width: 100%; /* Makes table full width */
+    border-collapse: collapse; /* Ensures borders collapse into a single line */
+    margin: 20px 0; /* Adds top and bottom margin */
+    background: white; /* White background for table */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around the table */
+}
+
+/* Table header styling */
+table thead {
+    background: #4CAF50; /* Green background for table header */
+    color: white; /* White text for header */
+}
+
+/* Table cell styling */
+table th, table td {
+    padding: 12px; /* Adds padding inside cells */
+    text-align: center; /* Centers the text in each cell */
+    border: 1px solid #ddd; /* Light border around table cells */
+}
+
+/* Alternate row color for table body */
+table tbody tr:nth-child(even) {
+    background: #f9f9f9; /* Light gray background for even rows */
+}
+
+/* Table row hover effect */
+table tbody tr:hover {
+    background: #f1f1f1; /* Slightly darker gray background on hover */
+}
+
+/* Action buttons in table */
+.actions button {
+    margin: 0 5px; /* Adds space between buttons */
+    padding: 5px 10px; /* Adds padding inside buttons */
+    font-size: 0.9rem; /* Reduces font size slightly */
+}
+
+/* Update button styling */
+.actions button.update {
+    background-color: #2196F3; /* Blue background for update button */
+}
+
+/* Update button hover effect */
+.actions button.update:hover {
+    background-color: #1e87e5; /* Darkens blue on hover */
+}
+
+/* Delete button styling */
+.actions button.delete {
+    background-color: #f44336; /* Red background for delete button */
+}
+
+/* Delete button hover effect */
+.actions button.delete:hover {
+    background-color: #e31b0c; /* Darkens red on hover */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+    form input[type="text"],
+    form input[type="number"],
+    form button {
+        width: 100%; /* Makes form elements full width on small screens */
+    }
+
+    table {
+        font-size: 0.9rem; /* Reduces font size of table on small screens */
+    }
+}
