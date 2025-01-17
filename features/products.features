@@ -1,0 +1,11 @@
+Feature: Manage products
+
+  Scenario: List all products
+    Given there are products in the database
+    When I query the products
+    Then I should get a list of products
+
+  Scenario: Search products by name
+    Given there are products in the database
+    When I search for products by name "Sample Product"
+    Then I should see the product "Sample Product"

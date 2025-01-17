@@ -1,138 +1,120 @@
-/* Global Styles */
 body {
-    font-family: Arial, sans-serif; /* Sets font to Arial, fallback to sans-serif */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    background-color: #f4f4f9; /* Light gray background color */
-    color: #333; /* Dark gray text for readability */
-    line-height: 1.6; /* Increases line height for better readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* Main heading */
 h1 {
-    text-align: center; /* Centers the text */
-    color: #4CAF50; /* Green color for heading */
-    margin: 20px 0; /* Adds top and bottom margin */
+    text-align: center;
+    color: #4CAF50;
+    margin: 20px 0;
 }
 
-/* Container for content */
 .container {
-    max-width: 900px; /* Maximum width of container */
-    margin: 20px auto; /* Centers the container and adds margin on top and bottom */
-    padding: 20px; /* Adds padding inside the container */
-    background: white; /* White background for content */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around the container */
-    border-radius: 8px; /* Rounded corners for the container */
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-/* Form Styling */
 form {
-    margin-bottom: 20px; /* Adds space below the form */
+    margin-bottom: 20px;
 }
 
 form input[type="text"],
 form input[type="number"],
 form button {
-    padding: 10px; /* Adds padding inside form elements */
-    margin: 5px 0; /* Adds space between form elements */
-    width: 100%; /* Makes form elements full width */
-    border: 1px solid #ddd; /* Light border around form elements */
-    border-radius: 5px; /* Rounded corners for form elements */
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-/* Label and checkbox styling */
 form label {
-    display: flex; /* Flexbox to align label and checkbox */
-    align-items: center; /* Vertically aligns label and checkbox */
-    margin: 10px 0; /* Adds margin above and below label */
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
 
 form input[type="checkbox"] {
-    margin-right: 10px; /* Adds space between checkbox and label */
+    margin-right: 10px;
 }
 
-/* Button Styling */
 button {
-    background-color: #4CAF50; /* Green background color for buttons */
-    color: white; /* White text color for buttons */
-    border: none; /* Removes border */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Button hover effect */
 button:hover {
-    background-color: #45a049; /* Darkens the green background on hover */
+    background-color: #45a049;
 }
 
-/* Table Styling */
 table {
-    width: 100%; /* Makes table full width */
-    border-collapse: collapse; /* Ensures borders collapse into a single line */
-    margin: 20px 0; /* Adds top and bottom margin */
-    background: white; /* White background for table */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow around the table */
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Table header styling */
 table thead {
-    background: #4CAF50; /* Green background for table header */
-    color: white; /* White text for header */
+    background: #4CAF50;
+    color: white;
 }
 
-/* Table cell styling */
 table th, table td {
-    padding: 12px; /* Adds padding inside cells */
-    text-align: center; /* Centers the text in each cell */
-    border: 1px solid #ddd; /* Light border around table cells */
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
 }
 
-/* Alternate row color for table body */
 table tbody tr:nth-child(even) {
-    background: #f9f9f9; /* Light gray background for even rows */
+    background: #f9f9f9;
 }
 
-/* Table row hover effect */
 table tbody tr:hover {
-    background: #f1f1f1; /* Slightly darker gray background on hover */
+    background: #f1f1f1;
 }
 
-/* Action buttons in table */
 .actions button {
-    margin: 0 5px; /* Adds space between buttons */
-    padding: 5px 10px; /* Adds padding inside buttons */
-    font-size: 0.9rem; /* Reduces font size slightly */
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
 }
 
-/* Update button styling */
 .actions button.update {
-    background-color: #2196F3; /* Blue background for update button */
+    background-color: #2196F3;
 }
 
-/* Update button hover effect */
 .actions button.update:hover {
-    background-color: #1e87e5; /* Darkens blue on hover */
+    background-color: #1e87e5;
 }
 
-/* Delete button styling */
 .actions button.delete {
-    background-color: #f44336; /* Red background for delete button */
+    background-color: #f44336;
 }
 
-/* Delete button hover effect */
 .actions button.delete:hover {
-    background-color: #e31b0c; /* Darkens red on hover */
+    background-color: #e31b0c;
 }
 
-/* Responsive design for small screens */
 @media (max-width: 600px) {
     form input[type="text"],
     form input[type="number"],
     form button {
-        width: 100%; /* Makes form elements full width on small screens */
+        width: 100%;
     }
 
     table {
-        font-size: 0.9rem; /* Reduces font size of table on small screens */
+        font-size: 0.9rem;
     }
 }

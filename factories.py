@@ -1,32 +1,21 @@
 from faker import Faker
+import random
 
-# Initialize the Faker object to generate fake data
 fake = Faker()
 
-def create_fake_product():
-    """
-    Generate a fake product with random attributes.
-    
-    Returns a dictionary with the following keys:
-    - 'id': A unique identifier for the product (UUID)
-    - 'name': A random product name (word)
-    - 'category': A random product category (word)
-    - 'price': A random price, rounded to two decimal places
-    - 'availability': A random boolean indicating whether the product is available
-    """
+CATEGORIES = ["Electronics", "Clothing", "Books", "Toys"]
+AVAILABILITY = [True, False]
+
+def fake_product():
+    """Gera um produto fictício"""
     return {
-        # Generate a unique product ID using a UUID
-        "id": fake.uuid4(),
-        
-        # Generate a random word for the product name
-        "name": fake.word(),
-        
-        # Generate a random word for the product category
-        "category": fake.word(),
-        
-        # Generate a random price with 3 digits before the decimal and 2 digits after
-        "price": round(fake.pyfloat(left_digits=3, right_digits=2, positive=True), 2),
-        
-        # Generate a random boolean value indicating availability (True or False)
-        "availability": fake.boolean(),
+        "id": random.randint(1, 1000),
+        "name": fake.unique.word().capitalize(),
+        "category": random.choice(CATEGORIES),
+        "price": round(random.uniform(10.0, 1000.0), 2),
+        "available": random.choice(AVAILABILITY),
     }
+
+# Exemplo de geração de produtos fictícios
+if __name__ == "__main__":
+    print([fake_product() for _ in range(5)])
